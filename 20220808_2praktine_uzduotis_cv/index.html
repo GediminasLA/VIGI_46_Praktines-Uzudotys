@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+
+            <!-- IMAGE OF THAT CRAZY DOG -->
+            <div id="photo"></div>
+
+            <!-- GENERAL SHORT INFO -->
+            <div id="info">
+                <h1>Crazy Chihuahua</h1>
+                <h2>very everything-stack dev</h2>
+                <p>insert osum description here. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                    quos. Nihil, doloribus</p>
+            </div>
+        </header>
+        <main>
+            <!-- ABOUT ME -->
+            <section id="aboutMe">
+                <h1>about <em>that</em></h1>
+                <p>Not much to say about that crazy fella' up there. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dignissimos nobis eveniet architecto vero animi adipisci assumenda quod, tempore ipsa eius sit
+                    nesciunt cum minima commodi ea sint, hic sunt atque.</p>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills">
+                <h1>skills</h1>
+                <div id="skillsLayout">
+                    <!-- SKILL NAMES -->
+                    <section id="left">
+                        <h3>html</h3>
+                        <h3>css</h3>
+                        <h3>javascript</h3>
+                    </section>
+
+                    <!-- BUBBLES OF KNOWLEDGE / YAY OR NAY BUBBLES -->
+                    <section id="right">
+                        <!-- FIRST LINE -->
+                        <div>
+                            <span class="yay"></span>
+                            <span class="yay"></span>
+                            <span class="yay"></span>
+                        </div>
+                        <!-- SECOND LINE -->
+                        <div>
+                            <span class="yay"></span>
+                            <span class="yay"></span>
+                            <span class="nay"></span>
+                        </div>
+                        <!-- THIRD LINE -->
+                        <div>
+                            <span class="nay"></span>
+                            <span class="nay"></span>
+                            <span class="nay"></span>
+                        </div>
+                    </section>
+                </div>
+                <p id="nonsense">slowly but surely getting there</p>
+            </section>
+
+            <!-- SUMMARIZED SKILLS -->
+            <section id="summary">
+                <p>unstable but crazy happy. not aggresive but having a hard time controlling nerves.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum itaque commodi mollitia voluptatum
+                    asperiores voluptas molestiae voluptatem dolore necessitatibus debitis! Quas qui ea sint doloribus
+                    id, voluptatibus quod pariatur tempore.
+                </p>
+            </section>
+        </main>
+    </div>
+    <!-- BONUS -->
+    <audio id="growl" src="./etc/growl.mp3" preload="auto"></audio>
+    <script>
+
+        // due to new google security policy, user has to interact with document first for sound to play on chihuahua image :(
+        var dog = document.getElementById("photo");
+        var growl = document.getElementById("growl");
+
+        dog.addEventListener('mouseover', () => {
+            growl.play();
+        })
+    </script>
+</body>
+
+</html>
